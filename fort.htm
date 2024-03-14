@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html>
 <style>
+    body {
+        background-color: lightblue;
+    }
+
     .button {
         background-color: #04AA6D;
         border: none;
@@ -60,7 +64,6 @@
         <script>
             hasRun = false;
             num = 0;
-            blinker = "";
 
             function myFunction() {
                 if (num >= 100) {
@@ -68,8 +71,8 @@
                     document.getElementById("p1").innerHTML = fort;
                     num = 0
                 } else {
-                document.getElementById("p1").innerHTML = num;
-                num++;
+                    document.getElementById("p1").innerHTML = num;
+                    num++;
                 }
                 if (hasRun) {
                     document.getElementById("p0").innerHTML = "fortnite";
