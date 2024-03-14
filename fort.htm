@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<style>
+    .button {
+        background-color: #04AA6D;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+    }
+
+    .display {
+        background-color: aquamarine;
+        border: none;
+        color: black;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+    }
+
+    .blinker0 {
+        background-color: rgb(0, 255, 0);
+        border: none;
+        color: black;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+    }
+
+    .blinker1 {
+        background-color: rgb(255, 0, 0);
+        border: none;
+        color: black;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+    }
+</style>
+
+<body>
+
+    <head>
+        <script>
+            hasRun = false;
+            num = 0;
+            blinker = "";
+
+            function myFunction() {
+                if (num >= 100) {
+                    fort = "wow! you fortnited 100 times!"
+                    document.getElementById("p1").innerHTML = fort;
+                    num = 0
+                } else {
+                document.getElementById("p1").innerHTML = num;
+                num++;
+                }
+                if (hasRun) {
+                    document.getElementById("p0").innerHTML = "fortnite";
+                    document.getElementById("p0").className = "blinker0";
+                    hasRun = false;
+                } else {
+                    document.getElementById("p0").innerHTML = "command";
+                    document.getElementById("p0").className = "blinker1";
+                    hasRun = true;
+                }
+            }
+
+        </script>
+    </head>
+
+    <body>
+
+        <p class="blinker0" id="p0">fortnite</p>
+        <p class="display" id="p1">count</p>
+        <button class="button" type="button" onclick="myFunction()">button</button>
+
+    </body>
+
+</html>
