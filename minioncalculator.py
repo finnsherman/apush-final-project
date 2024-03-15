@@ -69,7 +69,6 @@ def calculate(minionValue):
     else:
         return "FORTNITE"
 
-
 def display():
     myLabel = Label(mainWindow, text = calculate(getMinionNumber()))
     myLabel.pack(side = TOP)
