@@ -21,7 +21,7 @@ function Title() {
                 </div>
 
             </body>
-
+                <Link to="/Refining">New Stand Form</Link>
         </html>
     );
 }
