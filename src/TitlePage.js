@@ -21,12 +21,6 @@ function Title() {
                     <p class="selector3" id="s3">Refining the Republic</p>
                     <button class="button" onclick="document.location='Refining.html'">Learn more...</button>
 
-                    <Link
-                        to="/new/stand"
-                        className="title"
-                    >
-                        New Stand Form
-                    </Link>
                 </div>
             </body>
         </html>
