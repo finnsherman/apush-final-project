@@ -1,4 +1,6 @@
 import "./APUSH.css"
+import { Link } from "react-router-dom";
+import * as React from "react";
 
 function Title() {
     return (
