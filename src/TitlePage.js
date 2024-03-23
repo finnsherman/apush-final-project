@@ -1,5 +1,4 @@
 import "./APUSH.css"
-import { Link } from "react-router-dom";
 import * as React from "react";
 
 function Title() {
@@ -20,10 +19,10 @@ function Title() {
 
                     <p class="selector3" id="s3">Refining the Republic</p>
                     <button class="button" onclick="document.location='Refining.html'">Learn more...</button>
-
-                    <Link to="/Refining">New Stand Form</Link>
                 </div>
-
+                <div>
+                    <p>FORTNITE COMMAND!!!!!!</p>
+                </div>
             </body>
         </html>
     );
