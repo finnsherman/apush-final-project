@@ -20,7 +20,6 @@ function Title() {
 
                     <p class="selector3" id="s3">Refining the Republic</p>
                     <button class="button" onclick="document.location='Refining.html'">Learn more...</button>
-
                 </div>
             </body>
         </html>
